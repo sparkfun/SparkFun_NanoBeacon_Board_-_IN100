@@ -3386,6 +3386,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-1.0681875" y="0.09673125"/>
 </polygon>
 </package>
+<package name="PRODUCT_IDENT_PASTE_SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.2032" layer="21"/>
+<smd name="1" x="-0.0254" y="0" dx="1.6764" dy="1.27" layer="1" cream="no"/>
+<rectangle x1="-0.9652" y1="-0.7366" x2="0.9144" y2="0.7366" layer="31"/>
+</package>
 </packages>
 </library>
 <library name="IN100">
@@ -3802,13 +3816,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.508" y="-0.127"/>
 </polygon>
 </package>
-<package name="SMT-JUMPER_2_NC_PASTE_NO-SILK" urn="urn:adsk.eagle:footprint:39260/1">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-1.2446" y1="-1.1176" x2="1.2446" y2="1.1176" layer="31"/>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="SMT-JUMPER_2_NC_TRACE_SILK" urn="urn:adsk.eagle:package:39281/1" type="box">
@@ -3824,11 +3831,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package3d name="SMT-JUMPER_3_2-NC_TRACE_SILK" urn="urn:adsk.eagle:package:39289/1" locally_modified="yes" type="box">
 <packageinstances>
 <packageinstance name="SMT-JUMPER_3_2-NC_TRACE_SILK"/>
-</packageinstances>
-</package3d>
-<package3d name="SMT-JUMPER_2_NC_PASTE_NO-SILK" urn="urn:adsk.eagle:package:39283/1" type="box">
-<packageinstances>
-<packageinstance name="SMT-JUMPER_2_NC_PASTE_NO-SILK"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9265,15 +9267,15 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U$23" library="output" package="RST0" value="" x="5.08" y="12.7" smashed="yes"/>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="QWIIC_3MM" value="QWIIC_LOGO_3MM" x="20.574" y="19.431" smashed="yes"/>
-<element name="U$28" library="output" package="DEV0" value="" x="23.876" y="21.59" smashed="yes"/>
-<element name="U$29" library="output" package="PROD0" value="" x="23.876" y="24.13" smashed="yes"/>
-<element name="PROD" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="24.13" y="24.13" smashed="yes">
-<attribute name="NAME" x="24.13" y="25.273" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="24.13" y="22.987" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="U$28" library="output" package="DEV0" value="" x="23.622" y="21.717" smashed="yes"/>
+<element name="U$29" library="output" package="PROD0" value="" x="23.622" y="24.003" smashed="yes"/>
+<element name="PROD" library="SparkFun-Aesthetics" package="PRODUCT_IDENT_PASTE_SILK" value="PROD_ID_PASTE_SILK" x="24.13" y="24.003" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.987" y="24.003" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="25.273" y="24.003" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="DEV" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="24.13" y="21.59" smashed="yes">
-<attribute name="NAME" x="24.13" y="22.733" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="24.13" y="20.447" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="DEV" library="SparkFun-Aesthetics" package="PRODUCT_IDENT_PASTE_SILK" value="PROD_ID_PASTE_SILK" x="24.13" y="21.717" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.987" y="21.717" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="25.273" y="21.717" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -9640,7 +9642,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="19,1,4268e285a4f9c5b0"/>
 <approved hash="19,1,65aaea9af1fd685e"/>
 <approved hash="19,1,e6e868507337eb1c"/>
-<approved hash="19,16,2dab5e2a18bbc1b5"/>
 <approved hash="5,1,ddeb38206a4fab80"/>
 <approved hash="19,16,40bcbdd57328584b"/>
 <approved hash="19,1,69cdd2f2dc96d44d"/>
@@ -9650,6 +9651,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="19,16,5aec8b1e1451bc20"/>
 <approved hash="21,19,744e8a4e764c77b3"/>
 <approved hash="21,19,458245024700c700"/>
+<approved hash="19,16,971e2cc0a20eb35f"/>
 </errors>
 </board>
 </drawing>
