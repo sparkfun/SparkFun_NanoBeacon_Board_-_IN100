@@ -22234,6 +22234,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.55" y1="1.25" x2="0.05" y2="1.55" layer="29" rot="R90"/>
 <rectangle x1="-0.05" y1="-1.55" x2="0.55" y2="-1.25" layer="29" rot="R90"/>
 <rectangle x1="-0.55" y1="-1.55" x2="0.05" y2="-1.25" layer="29" rot="R90"/>
+<text x="0" y="2.25" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
+<text x="0" y="-2.25" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -22294,7 +22296,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="XO_P" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-17260"/>
+</technology>
 </technologies>
 </device>
 </devices>
