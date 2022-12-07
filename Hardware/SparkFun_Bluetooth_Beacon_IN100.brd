@@ -9225,7 +9225,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <element name="U$23" library="output" package="RST0" value="" x="5.08" y="12.7" smashed="yes"/>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="QWIIC_3MM" value="QWIIC_LOGO_3MM" x="20.574" y="19.431" smashed="yes"/>
 <element name="U$28" library="output" package="DEV0" value="" x="21.59" y="21.717" smashed="yes"/>
-<element name="PROD" library="SparkFun-Aesthetics" package="PRODUCT_IDENT_PASTE_SILK" value="PROD_ID_PASTE_SILK" x="20.955" y="24.003" smashed="yes" rot="R90">
+<element name="PRO" library="SparkFun-Aesthetics" package="PRODUCT_IDENT_PASTE_SILK" value="PROD_ID_PASTE_SILK" x="20.955" y="24.003" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.812" y="24.003" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="22.098" y="24.003" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
@@ -9234,6 +9234,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <attribute name="VALUE" x="22.098" y="21.717" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="U$30" library="output" package="PRO0" value="" x="21.59" y="24.003" smashed="yes"/>
+<element name="TP3" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="6.35" y="15.875" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -9300,7 +9301,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <contactref element="RST" pad="4"/>
 <contactref element="RST" pad="3"/>
 <via x="9.9314" y="17.5514" extent="1-16" drill="0.3048"/>
-<via x="6.985" y="15.875" extent="1-16" drill="0.3048"/>
+<via x="7.366" y="15.875" extent="1-16" drill="0.3048"/>
 <via x="5.08" y="12.192" extent="1-16" drill="0.3048"/>
 <via x="3.81" y="10.795" extent="1-16" drill="0.3048"/>
 <via x="9.144" y="12.192" extent="1-16" drill="0.3048"/>
@@ -9572,7 +9573,11 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="9.5124" y1="13.932" x2="8.4" y2="13.932" width="0.2032" layer="1"/>
 <wire x1="7.485" y1="12.446" x2="7.485" y2="13.017" width="0.2032" layer="1"/>
 <wire x1="7.485" y1="13.017" x2="8.4" y2="13.932" width="0.2032" layer="1"/>
-<wire x1="7.485" y1="12.446" x2="4.3" y2="13.932" width="0" layer="19" extent="1-1"/>
+<contactref element="TP3" pad="1"/>
+<via x="6.35" y="15.875" extent="1-16" drill="0.3048"/>
+<wire x1="8.4" y1="13.932" x2="6.457" y2="15.875" width="0.2032" layer="1"/>
+<wire x1="6.457" y1="15.875" x2="6.35" y2="15.875" width="0.2032" layer="1"/>
+<wire x1="6.35" y1="15.875" x2="4.3" y2="13.932" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="PWR" pad="2"/>
@@ -9605,10 +9610,11 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="19,16,30cc6bba6af2ce46"/>
 <approved hash="19,16,6a186a78a14ca12c"/>
 <approved hash="19,16,76587100ba34bd6c"/>
-<approved hash="21,19,744e8a4e764c77b3"/>
 <approved hash="21,19,458245024700c700"/>
 <approved hash="19,16,971e2cc0a20eb35f"/>
 <approved hash="19,16,17fa4cb124e80620"/>
+<approved hash="19,16,1cea1c013c353cde"/>
+<approved hash="21,19,cbf0caf0c8f348f2"/>
 </errors>
 </board>
 </drawing>

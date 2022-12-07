@@ -27269,8 +27269,9 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="RST" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-4.6X2.8MM"/>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="QWIIC_LOGO" device="_3MM"/>
-<part name="PROD" library="SparkFun-Aesthetics" deviceset="PROD_ID_PASTE" device="_SILK" value="PROD_ID_PASTE_SILK"/>
+<part name="PRO" library="SparkFun-Aesthetics" deviceset="PROD_ID_PASTE" device="_SILK" value="PROD_ID_PASTE_SILK"/>
 <part name="DEV" library="SparkFun-Aesthetics" deviceset="PROD_ID_PASTE" device="_SILK"/>
+<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3"/>
 </parts>
 <sheets>
 <sheet>
@@ -27438,11 +27439,11 @@ providing external power
 <attribute name="NAME" x="102.616" y="33.02" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="105.664" y="33.02" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="TP1" gate="G$1" x="175.26" y="86.36" smashed="yes">
-<attribute name="NAME" x="175.26" y="83.82" size="1.778" layer="95" font="vector"/>
+<instance part="TP1" gate="G$1" x="175.26" y="83.82" smashed="yes">
+<attribute name="NAME" x="175.26" y="81.28" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="TP2" gate="G$1" x="175.26" y="91.44" smashed="yes">
-<attribute name="NAME" x="175.26" y="88.9" size="1.778" layer="95" font="vector"/>
+<instance part="TP2" gate="G$1" x="175.26" y="88.9" smashed="yes">
+<attribute name="NAME" x="175.26" y="86.36" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="BUS" gate="G$1" x="96.52" y="55.88" smashed="yes" rot="MR90">
 <attribute name="NAME" x="97.282" y="59.436" size="1.778" layer="95" font="vector" rot="MR180" align="center"/>
@@ -27463,11 +27464,14 @@ providing external power
 <attribute name="VALUE" x="119.38" y="119.126" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="LOGO3" gate="G$1" x="180.34" y="43.18" smashed="yes"/>
-<instance part="PROD" gate="G$1" x="223.52" y="91.44" smashed="yes">
+<instance part="PRO" gate="G$1" x="223.52" y="91.44" smashed="yes">
 <attribute name="NAME" x="223.52" y="94.996" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
 <instance part="DEV" gate="G$1" x="223.52" y="83.82" smashed="yes">
 <attribute name="NAME" x="223.52" y="87.376" size="1.778" layer="95" font="vector" align="center"/>
+</instance>
+<instance part="TP3" gate="G$1" x="175.26" y="93.98" smashed="yes">
+<attribute name="NAME" x="175.26" y="91.44" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -27729,8 +27733,8 @@ providing external power
 </segment>
 <segment>
 <pinref part="TP2" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="91.44" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
-<label x="172.72" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
+<label x="172.72" y="88.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA/IO3" class="0">
@@ -27750,8 +27754,8 @@ providing external power
 </segment>
 <segment>
 <pinref part="TP1" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
-<label x="172.72" y="86.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="83.82" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
+<label x="172.72" y="83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -27795,6 +27799,14 @@ providing external power
 <pinref part="RST" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="134.62" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="137.16" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="137.16" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
+<junction x="119.38" y="137.16"/>
+<label x="121.92" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP3" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
+<label x="172.72" y="93.98" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
