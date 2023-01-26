@@ -27250,10 +27250,10 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="_0402" value="RED">
+<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="_0402" value="DNP">
 <attribute name="PROD_ID" value=""/>
 </part>
-<part name="R1" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0402T-1/16W-1%" value="2.2k">
+<part name="R1" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0402T-1/16W-1%" value="DNP">
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
@@ -27270,7 +27270,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="I2C" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39289/1"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="RST" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-4.6X2.8MM">
+<part name="RST" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-4.6X2.8MM" value="DNP">
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
