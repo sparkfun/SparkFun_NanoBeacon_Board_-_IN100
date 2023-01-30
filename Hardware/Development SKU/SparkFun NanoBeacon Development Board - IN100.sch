@@ -27276,7 +27276,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="241.3" y="7.62" size="2.54" layer="94" font="vector" align="center">v10</text>
+<text x="241.3" y="7.62" size="2.54" layer="94" font="vector" align="center">v11</text>
 <text x="175.26" y="12.7" size="2.54" layer="94" font="vector" align="center">Dryw Wade</text>
 <text x="73.66" y="63.5" size="2.54" layer="94" font="vector" align="center">Connectors</text>
 <text x="172.72" y="180.34" size="2.54" layer="94" font="vector" align="center">Battery</text>
