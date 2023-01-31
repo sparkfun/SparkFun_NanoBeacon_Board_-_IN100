@@ -9542,9 +9542,11 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="19,16,6a186a78a14ca12c"/>
 <approved hash="19,16,76587100ba34bd6c"/>
 <approved hash="21,19,458245024700c700"/>
-<approved hash="19,16,971e2cc0a20eb35f"/>
 <approved hash="19,16,1cea1c013c353cde"/>
 <approved hash="21,19,cbf0caf0c8f348f2"/>
+<approved hash="19,16,5aec8b1e1451bc20"/>
+<approved hash="19,16,2dab5e2a18bbc1b5"/>
+<approved hash="19,16,40bcbdd57328584b"/>
 </errors>
 </board>
 </drawing>
