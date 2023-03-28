@@ -249,44 +249,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>&lt;h3&gt;2.4GHz Meander PCB Trace Antenna&lt;/h3&gt;
 &lt;p&gt;PCB trace antenna with a 15.2 x 5.7mm footprint.&lt;/p&gt;
 &lt;p&gt;Based on layout from &lt;a href="http://www.ti.com/lit/an/swra117d/swra117d.pdf"&gt;TI app note AN043&lt;/a&gt;.&lt;/p&gt;</description>
-<wire x1="-12" y1="0" x2="3" y2="0" width="0.05" layer="51"/>
-<smd name="GND" x="2.1" y="-0.25" dx="0.9" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
+<polygon width="0.002540625" layer="1">
+<vertex x="-0.25" y="-0.5"/>
+<vertex x="-0.25" y="4.4"/>
+<vertex x="-1.65" y="4.4"/>
+<vertex x="-1.65" y="-0.5"/>
+<vertex x="-2.55" y="-0.5"/>
+<vertex x="-2.55" y="4.9"/>
+<vertex x="2.45" y="4.9"/>
+<vertex x="2.45" y="2.26"/>
+<vertex x="4.45" y="2.26"/>
+<vertex x="4.45" y="4.9"/>
+<vertex x="7.15" y="4.9"/>
+<vertex x="7.15" y="2.26"/>
+<vertex x="9.15" y="2.26"/>
+<vertex x="9.15" y="4.9"/>
+<vertex x="11.85" y="4.9"/>
+<vertex x="11.85" y="0.46"/>
+<vertex x="11.35" y="0.46"/>
+<vertex x="11.35" y="4.4"/>
+<vertex x="9.65" y="4.4"/>
+<vertex x="9.65" y="1.76"/>
+<vertex x="6.65" y="1.76"/>
+<vertex x="6.65" y="4.4"/>
+<vertex x="4.95" y="4.4"/>
+<vertex x="4.95" y="1.76"/>
+<vertex x="1.95" y="1.76"/>
+<vertex x="1.95" y="4.4"/>
+<vertex x="0.25" y="4.4"/>
+<vertex x="0.25" y="-0.5"/>
+</polygon>
+<wire x1="-3" y1="0" x2="12" y2="0" width="0.05" layer="51"/>
+<smd name="GND" x="-2.1" y="-0.25" dx="0.9" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
 <smd name="ANT" x="0" y="-0.25" dx="0.5" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
-<wire x1="-12" y1="5.2" x2="3" y2="5.2" width="0.05" layer="51"/>
-<text x="-8" y="-0.8" size="0.64" layer="51" font="vector">Ground Plane</text>
-<text x="-7.5" y="5.5" size="0.64" layer="51" font="vector">Board Edge</text>
+<wire x1="-3" y1="5.2" x2="12" y2="5.2" width="0.05" layer="51"/>
+<text x="1" y="-0.8" size="0.64" layer="51" font="vector">Ground Plane</text>
+<text x="1.5" y="5.5" size="0.64" layer="51" font="vector">Board Edge</text>
 <text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.002540625" layer="1">
-<vertex x="2.55" y="-0.5"/>
-<vertex x="2.55" y="4.9"/>
-<vertex x="-2.45" y="4.9"/>
-<vertex x="-2.45" y="2.26"/>
-<vertex x="-4.45" y="2.26"/>
-<vertex x="-4.45" y="4.9"/>
-<vertex x="-7.15" y="4.9"/>
-<vertex x="-7.15" y="2.26"/>
-<vertex x="-9.15" y="2.26"/>
-<vertex x="-9.15" y="4.9"/>
-<vertex x="-11.85" y="4.9"/>
-<vertex x="-11.85" y="0.46"/>
-<vertex x="-11.35" y="0.46"/>
-<vertex x="-11.35" y="4.4"/>
-<vertex x="-9.65" y="4.4"/>
-<vertex x="-9.65" y="1.76"/>
-<vertex x="-6.65" y="1.76"/>
-<vertex x="-6.65" y="4.4"/>
-<vertex x="-4.95" y="4.4"/>
-<vertex x="-4.95" y="1.76"/>
-<vertex x="-1.95" y="1.76"/>
-<vertex x="-1.95" y="4.4"/>
-<vertex x="-0.25" y="4.4"/>
-<vertex x="-0.25" y="-0.5"/>
-<vertex x="0.25" y="-0.5"/>
-<vertex x="0.25" y="4.4"/>
-<vertex x="1.65" y="4.4"/>
-<vertex x="1.65" y="-0.5"/>
-</polygon>
 </package>
 <package name="TRACE_ANTENNA_915MHZ_THINGMAGIC">
 <wire x1="-4.914421875" y1="-0.287740625" x2="30.518578125" y2="-0.287740625" width="0.127" layer="51"/>
@@ -344,6 +344,105 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="30" y="0"/>
 </polygon>
 </package>
+<package name="IN100">
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.1524" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.1524" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.1524" layer="51"/>
+<smd name="1" x="-1.4" y="1.2" dx="0.5" dy="0.2" layer="1" stop="no"/>
+<smd name="2" x="-1.4" y="0.8" dx="0.5" dy="0.2" layer="1" stop="no"/>
+<smd name="3" x="-1.4" y="0.4" dx="0.5" dy="0.2" layer="1" stop="no"/>
+<smd name="4" x="-1.4" y="0" dx="0.5" dy="0.2" layer="1" stop="no"/>
+<smd name="5" x="-1.4" y="-0.4" dx="0.5" dy="0.2" layer="1" stop="no"/>
+<smd name="6" x="-1.4" y="-0.8" dx="0.5" dy="0.2" layer="1" stop="no"/>
+<smd name="7" x="-1.4" y="-1.2" dx="0.5" dy="0.2" layer="1" stop="no"/>
+<smd name="8" x="-0.25" y="-1.4" dx="0.5" dy="0.2" layer="1" rot="R90" stop="no"/>
+<smd name="9" x="0.25" y="-1.4" dx="0.5" dy="0.2" layer="1" rot="R90" stop="no"/>
+<smd name="10" x="1.4" y="-1.2" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
+<smd name="11" x="1.4" y="-0.8" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
+<smd name="12" x="1.4" y="-0.4" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
+<smd name="13" x="1.4" y="0" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
+<smd name="14" x="1.4" y="0.4" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
+<smd name="15" x="1.4" y="0.8" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
+<smd name="16" x="1.4" y="1.2" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
+<smd name="17" x="0.25" y="1.4" dx="0.5" dy="0.2" layer="1" rot="R270" stop="no"/>
+<smd name="18" x="-0.25" y="1.4" dx="0.5" dy="0.2" layer="1" rot="R270" stop="no"/>
+<smd name="19" x="0" y="0" dx="1.5" dy="1.7" layer="1" stop="no" cream="no"/>
+<wire x1="-1.75" y1="1.75" x2="-1.75" y2="-1.75" width="0.1524" layer="21"/>
+<wire x1="-1.75" y1="-1.75" x2="1.75" y2="-1.75" width="0.1524" layer="21"/>
+<wire x1="1.75" y1="-1.75" x2="1.75" y2="1.75" width="0.1524" layer="21"/>
+<wire x1="1.75" y1="1.75" x2="-1.75" y2="1.75" width="0.1524" layer="21"/>
+<circle x="-2" y="2" radius="0.05" width="0.1524" layer="21"/>
+<rectangle x1="1.1" y1="1.05" x2="1.7" y2="1.35" layer="29"/>
+<rectangle x1="1.1" y1="0.65" x2="1.7" y2="0.95" layer="29"/>
+<rectangle x1="1.1" y1="0.25" x2="1.7" y2="0.55" layer="29"/>
+<rectangle x1="1.1" y1="-0.15" x2="1.7" y2="0.15" layer="29"/>
+<rectangle x1="1.1" y1="-0.55" x2="1.7" y2="-0.25" layer="29"/>
+<rectangle x1="1.1" y1="-0.95" x2="1.7" y2="-0.65" layer="29"/>
+<rectangle x1="1.1" y1="-1.35" x2="1.7" y2="-1.05" layer="29"/>
+<rectangle x1="-1.7" y1="1.05" x2="-1.1" y2="1.35" layer="29"/>
+<rectangle x1="-1.7" y1="0.65" x2="-1.1" y2="0.95" layer="29"/>
+<rectangle x1="-1.7" y1="0.25" x2="-1.1" y2="0.55" layer="29"/>
+<rectangle x1="-1.7" y1="-0.15" x2="-1.1" y2="0.15" layer="29"/>
+<rectangle x1="-1.7" y1="-0.55" x2="-1.1" y2="-0.25" layer="29"/>
+<rectangle x1="-1.7" y1="-0.95" x2="-1.1" y2="-0.65" layer="29"/>
+<rectangle x1="-1.7" y1="-1.35" x2="-1.1" y2="-1.05" layer="29"/>
+<rectangle x1="-0.8" y1="-0.9" x2="0.8" y2="0.9" layer="29"/>
+<rectangle x1="-0.75" y1="0.25" x2="-0.25" y2="0.85" layer="31"/>
+<rectangle x1="0.25" y1="0.25" x2="0.75" y2="0.85" layer="31"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.75" y2="-0.25" layer="31"/>
+<rectangle x1="-0.75" y1="-0.85" x2="-0.25" y2="-0.25" layer="31"/>
+<rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="39"/>
+<rectangle x1="-0.05" y1="1.25" x2="0.55" y2="1.55" layer="29" rot="R90"/>
+<rectangle x1="-0.55" y1="1.25" x2="0.05" y2="1.55" layer="29" rot="R90"/>
+<rectangle x1="-0.05" y1="-1.55" x2="0.55" y2="-1.25" layer="29" rot="R90"/>
+<rectangle x1="-0.55" y1="-1.55" x2="0.05" y2="-1.25" layer="29" rot="R90"/>
+<text x="0" y="2.25" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
+<text x="0" y="-2.25" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
+</package>
+<package name="TRACE_ANTENNA_2.4GHZ_15.2MM_MIRROR">
+<description>&lt;h3&gt;2.4GHz Meander PCB Trace Antenna&lt;/h3&gt;
+&lt;p&gt;PCB trace antenna with a 15.2 x 5.7mm footprint.&lt;/p&gt;
+&lt;p&gt;Based on layout from &lt;a href="http://www.ti.com/lit/an/swra117d/swra117d.pdf"&gt;TI app note AN043&lt;/a&gt;.&lt;/p&gt;</description>
+<wire x1="-12" y1="0" x2="3" y2="0" width="0.05" layer="51"/>
+<smd name="GND" x="2.1" y="-0.25" dx="0.9" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="ANT" x="0" y="-0.25" dx="0.5" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
+<wire x1="-12" y1="5.2" x2="3" y2="5.2" width="0.05" layer="51"/>
+<text x="-8" y="-0.8" size="0.64" layer="51" font="vector">Ground Plane</text>
+<text x="-7.5" y="5.5" size="0.64" layer="51" font="vector">Board Edge</text>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.002540625" layer="1">
+<vertex x="2.55" y="-0.5"/>
+<vertex x="2.55" y="4.9"/>
+<vertex x="-2.45" y="4.9"/>
+<vertex x="-2.45" y="2.26"/>
+<vertex x="-4.45" y="2.26"/>
+<vertex x="-4.45" y="4.9"/>
+<vertex x="-7.15" y="4.9"/>
+<vertex x="-7.15" y="2.26"/>
+<vertex x="-9.15" y="2.26"/>
+<vertex x="-9.15" y="4.9"/>
+<vertex x="-11.85" y="4.9"/>
+<vertex x="-11.85" y="0.46"/>
+<vertex x="-11.35" y="0.46"/>
+<vertex x="-11.35" y="4.4"/>
+<vertex x="-9.65" y="4.4"/>
+<vertex x="-9.65" y="1.76"/>
+<vertex x="-6.65" y="1.76"/>
+<vertex x="-6.65" y="4.4"/>
+<vertex x="-4.95" y="4.4"/>
+<vertex x="-4.95" y="1.76"/>
+<vertex x="-1.95" y="1.76"/>
+<vertex x="-1.95" y="4.4"/>
+<vertex x="-0.25" y="4.4"/>
+<vertex x="-0.25" y="-0.5"/>
+<vertex x="0.25" y="-0.5"/>
+<vertex x="0.25" y="4.4"/>
+<vertex x="1.65" y="4.4"/>
+<vertex x="1.65" y="-0.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA-GROUNDED">
@@ -358,6 +457,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="3.048" y="-2.286" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <pin name="GND" x="2.54" y="-2.54" visible="off" length="short" rot="R90"/>
 <pin name="SIGNAL" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
+</symbol>
+<symbol name="IN100">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="VCC" x="-15.24" y="15.24" length="short" direction="pwr"/>
+<pin name="GND" x="-15.24" y="-15.24" length="short" direction="pwr"/>
+<pin name="RX/GPIO0" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="TX/GPIO1" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="GPIO2" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="GPIO3" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="MGPIO4" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="MGPIO5" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="MGPIO6" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="MGPIO7" x="15.24" y="-15.24" length="short" rot="R180"/>
+<pin name="XO_N" x="-15.24" y="-2.54" length="short"/>
+<pin name="XO_P" x="-15.24" y="0" length="short"/>
+<pin name="RTC_N" x="-15.24" y="5.08" length="short"/>
+<pin name="RTC_P" x="-15.24" y="7.62" length="short"/>
+<pin name="VDDQ" x="-15.24" y="12.7" length="short" direction="pwr"/>
+<pin name="EN" x="15.24" y="15.24" length="short" direction="in" rot="R180"/>
+<pin name="RF_TX" x="-15.24" y="-10.16" length="short"/>
+<pin name="SW0" x="15.24" y="10.16" length="short" direction="out" rot="R180"/>
+<pin name="SW1" x="15.24" y="7.62" length="short" direction="out" rot="R180"/>
+<text x="-12.7" y="18.034" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-20.32" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -403,6 +529,50 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="TRACE-15.2MM-MIRROR" package="TRACE_ANTENNA_2.4GHZ_15.2MM_MIRROR">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SIGNAL" pad="ANT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IN100" prefix="U">
+<gates>
+<gate name="G$1" symbol="IN100" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IN100">
+<connects>
+<connect gate="G$1" pin="EN" pad="18"/>
+<connect gate="G$1" pin="GND" pad="19"/>
+<connect gate="G$1" pin="GPIO2" pad="10"/>
+<connect gate="G$1" pin="GPIO3" pad="11"/>
+<connect gate="G$1" pin="MGPIO4" pad="12"/>
+<connect gate="G$1" pin="MGPIO5" pad="5"/>
+<connect gate="G$1" pin="MGPIO6" pad="4"/>
+<connect gate="G$1" pin="MGPIO7" pad="3"/>
+<connect gate="G$1" pin="RF_TX" pad="16"/>
+<connect gate="G$1" pin="RTC_N" pad="15"/>
+<connect gate="G$1" pin="RTC_P" pad="14"/>
+<connect gate="G$1" pin="RX/GPIO0" pad="8"/>
+<connect gate="G$1" pin="SW0" pad="6"/>
+<connect gate="G$1" pin="SW1" pad="7"/>
+<connect gate="G$1" pin="TX/GPIO1" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="17"/>
+<connect gate="G$1" pin="VDDQ" pad="13"/>
+<connect gate="G$1" pin="XO_N" pad="1"/>
+<connect gate="G$1" pin="XO_P" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-17260"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -22179,132 +22349,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="IN100">
-<packages>
-<package name="IN100">
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.1524" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.1524" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.1524" layer="51"/>
-<smd name="1" x="-1.4" y="1.2" dx="0.5" dy="0.2" layer="1" stop="no"/>
-<smd name="2" x="-1.4" y="0.8" dx="0.5" dy="0.2" layer="1" stop="no"/>
-<smd name="3" x="-1.4" y="0.4" dx="0.5" dy="0.2" layer="1" stop="no"/>
-<smd name="4" x="-1.4" y="0" dx="0.5" dy="0.2" layer="1" stop="no"/>
-<smd name="5" x="-1.4" y="-0.4" dx="0.5" dy="0.2" layer="1" stop="no"/>
-<smd name="6" x="-1.4" y="-0.8" dx="0.5" dy="0.2" layer="1" stop="no"/>
-<smd name="7" x="-1.4" y="-1.2" dx="0.5" dy="0.2" layer="1" stop="no"/>
-<smd name="8" x="-0.25" y="-1.4" dx="0.5" dy="0.2" layer="1" rot="R90" stop="no"/>
-<smd name="9" x="0.25" y="-1.4" dx="0.5" dy="0.2" layer="1" rot="R90" stop="no"/>
-<smd name="10" x="1.4" y="-1.2" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
-<smd name="11" x="1.4" y="-0.8" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
-<smd name="12" x="1.4" y="-0.4" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
-<smd name="13" x="1.4" y="0" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
-<smd name="14" x="1.4" y="0.4" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
-<smd name="15" x="1.4" y="0.8" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
-<smd name="16" x="1.4" y="1.2" dx="0.5" dy="0.2" layer="1" rot="R180" stop="no"/>
-<smd name="17" x="0.25" y="1.4" dx="0.5" dy="0.2" layer="1" rot="R270" stop="no"/>
-<smd name="18" x="-0.25" y="1.4" dx="0.5" dy="0.2" layer="1" rot="R270" stop="no"/>
-<smd name="19" x="0" y="0" dx="1.5" dy="1.7" layer="1" stop="no" cream="no"/>
-<wire x1="-1.75" y1="1.75" x2="-1.75" y2="-1.75" width="0.1524" layer="21"/>
-<wire x1="-1.75" y1="-1.75" x2="1.75" y2="-1.75" width="0.1524" layer="21"/>
-<wire x1="1.75" y1="-1.75" x2="1.75" y2="1.75" width="0.1524" layer="21"/>
-<wire x1="1.75" y1="1.75" x2="-1.75" y2="1.75" width="0.1524" layer="21"/>
-<circle x="-2" y="2" radius="0.05" width="0.1524" layer="21"/>
-<rectangle x1="1.1" y1="1.05" x2="1.7" y2="1.35" layer="29"/>
-<rectangle x1="1.1" y1="0.65" x2="1.7" y2="0.95" layer="29"/>
-<rectangle x1="1.1" y1="0.25" x2="1.7" y2="0.55" layer="29"/>
-<rectangle x1="1.1" y1="-0.15" x2="1.7" y2="0.15" layer="29"/>
-<rectangle x1="1.1" y1="-0.55" x2="1.7" y2="-0.25" layer="29"/>
-<rectangle x1="1.1" y1="-0.95" x2="1.7" y2="-0.65" layer="29"/>
-<rectangle x1="1.1" y1="-1.35" x2="1.7" y2="-1.05" layer="29"/>
-<rectangle x1="-1.7" y1="1.05" x2="-1.1" y2="1.35" layer="29"/>
-<rectangle x1="-1.7" y1="0.65" x2="-1.1" y2="0.95" layer="29"/>
-<rectangle x1="-1.7" y1="0.25" x2="-1.1" y2="0.55" layer="29"/>
-<rectangle x1="-1.7" y1="-0.15" x2="-1.1" y2="0.15" layer="29"/>
-<rectangle x1="-1.7" y1="-0.55" x2="-1.1" y2="-0.25" layer="29"/>
-<rectangle x1="-1.7" y1="-0.95" x2="-1.1" y2="-0.65" layer="29"/>
-<rectangle x1="-1.7" y1="-1.35" x2="-1.1" y2="-1.05" layer="29"/>
-<rectangle x1="-0.8" y1="-0.9" x2="0.8" y2="0.9" layer="29"/>
-<rectangle x1="-0.75" y1="0.25" x2="-0.25" y2="0.85" layer="31"/>
-<rectangle x1="0.25" y1="0.25" x2="0.75" y2="0.85" layer="31"/>
-<rectangle x1="0.25" y1="-0.85" x2="0.75" y2="-0.25" layer="31"/>
-<rectangle x1="-0.75" y1="-0.85" x2="-0.25" y2="-0.25" layer="31"/>
-<rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="39"/>
-<rectangle x1="-0.05" y1="1.25" x2="0.55" y2="1.55" layer="29" rot="R90"/>
-<rectangle x1="-0.55" y1="1.25" x2="0.05" y2="1.55" layer="29" rot="R90"/>
-<rectangle x1="-0.05" y1="-1.55" x2="0.55" y2="-1.25" layer="29" rot="R90"/>
-<rectangle x1="-0.55" y1="-1.55" x2="0.05" y2="-1.25" layer="29" rot="R90"/>
-<text x="0" y="2.25" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
-<text x="0" y="-2.25" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
-</package>
-</packages>
-<symbols>
-<symbol name="IN100">
-<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
-<pin name="VCC" x="-15.24" y="15.24" length="short" direction="pwr"/>
-<pin name="GND" x="-15.24" y="-15.24" length="short" direction="pwr"/>
-<pin name="RX/GPIO0" x="15.24" y="2.54" length="short" rot="R180"/>
-<pin name="TX/GPIO1" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="GPIO2" x="15.24" y="-2.54" length="short" rot="R180"/>
-<pin name="GPIO3" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="MGPIO4" x="15.24" y="-7.62" length="short" rot="R180"/>
-<pin name="MGPIO5" x="15.24" y="-10.16" length="short" rot="R180"/>
-<pin name="MGPIO6" x="15.24" y="-12.7" length="short" rot="R180"/>
-<pin name="MGPIO7" x="15.24" y="-15.24" length="short" rot="R180"/>
-<pin name="XO_N" x="-15.24" y="-2.54" length="short"/>
-<pin name="XO_P" x="-15.24" y="0" length="short"/>
-<pin name="RTC_N" x="-15.24" y="5.08" length="short"/>
-<pin name="RTC_P" x="-15.24" y="7.62" length="short"/>
-<pin name="VDDQ" x="-15.24" y="12.7" length="short" direction="pwr"/>
-<pin name="EN" x="15.24" y="15.24" length="short" direction="in" rot="R180"/>
-<pin name="RF_TX" x="-15.24" y="-10.16" length="short"/>
-<pin name="SW0" x="15.24" y="10.16" length="short" direction="out" rot="R180"/>
-<pin name="SW1" x="15.24" y="7.62" length="short" direction="out" rot="R180"/>
-<text x="-12.7" y="18.034" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-12.7" y="-20.32" size="1.778" layer="96" font="vector">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="IN100" prefix="U">
-<gates>
-<gate name="G$1" symbol="IN100" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="IN100">
-<connects>
-<connect gate="G$1" pin="EN" pad="18"/>
-<connect gate="G$1" pin="GND" pad="19"/>
-<connect gate="G$1" pin="GPIO2" pad="10"/>
-<connect gate="G$1" pin="GPIO3" pad="11"/>
-<connect gate="G$1" pin="MGPIO4" pad="12"/>
-<connect gate="G$1" pin="MGPIO5" pad="5"/>
-<connect gate="G$1" pin="MGPIO6" pad="4"/>
-<connect gate="G$1" pin="MGPIO7" pad="3"/>
-<connect gate="G$1" pin="RF_TX" pad="16"/>
-<connect gate="G$1" pin="RTC_N" pad="15"/>
-<connect gate="G$1" pin="RTC_P" pad="14"/>
-<connect gate="G$1" pin="RX/GPIO0" pad="8"/>
-<connect gate="G$1" pin="SW0" pad="6"/>
-<connect gate="G$1" pin="SW1" pad="7"/>
-<connect gate="G$1" pin="TX/GPIO1" pad="9"/>
-<connect gate="G$1" pin="VCC" pad="17"/>
-<connect gate="G$1" pin="VDDQ" pad="13"/>
-<connect gate="G$1" pin="XO_N" pad="1"/>
-<connect gate="G$1" pin="XO_P" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-17260"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-PowerSymbols">
 <description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
 This library contains power, ground, and voltage-supply symbols.
@@ -25228,7 +25272,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 <device name="-12MM_PTH" package="BATTCON_12MM_PTH">
 <connects>
-<connect gate="G$1" pin="+" pad="VCC@1 VCC@2"/>
+<connect gate="G$1" pin="+" pad="VCC@1"/>
 <connect gate="G$1" pin="-" pad="GND"/>
 </connects>
 <technologies>
@@ -25274,7 +25318,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 <device name="-12MM_SMD" package="BATTCON_12MM">
 <connects>
-<connect gate="G$1" pin="+" pad="PWR@1 PWR@2"/>
+<connect gate="G$1" pin="+" pad="PWR@1"/>
 <connect gate="G$1" pin="-" pad="GND"/>
 </connects>
 <technologies>
@@ -25389,6 +25433,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connects>
 <connect gate="G$1" pin="+" pad="1"/>
 <connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-12MM_SMD_BOTH_PWR_PADS" package="BATTCON_12MM">
+<connects>
+<connect gate="G$1" pin="+" pad="PWR@1 PWR@2"/>
+<connect gate="G$1" pin="-" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -27219,9 +27272,9 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </class>
 </classes>
 <parts>
-<part name="E1" library="SparkFun-RF" deviceset="ANTENNA-GROUNDED" device="TRACE-15.2MM"/>
+<part name="E1" library="SparkFun-RF" deviceset="ANTENNA-GROUNDED" device="TRACE-15.2MM-MIRROR" value="ANTENNA-GROUNDEDTRACE-15.2MM-MIRROR"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="U1" library="IN100" deviceset="IN100" device=""/>
+<part name="U1" library="SparkFun-RF" deviceset="IN100" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-26MHZ" device="SMD-3.2X2.5"/>
@@ -27229,7 +27282,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
-<part name="BT1" library="SparkFun-Batteries" deviceset="BATTERY" device="-12MM_SMD"/>
+<part name="BT1" library="SparkFun-Batteries" deviceset="BATTERY" device="-12MM_SMD_BOTH_PWR_PADS"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="H1" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H2" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
